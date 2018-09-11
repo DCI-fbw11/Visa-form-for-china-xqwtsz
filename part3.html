@@ -1,0 +1,132 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chinese Visa Application Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <div>
+        <nav id="topnavbar">
+            <a href="index.html">Go Back to Start Page</a>
+            <a href="part1.html">Part 1: Personal Information</a>
+            <a href="part2.html">Part 2: Travel Information</a>
+            <a href="part3.html">Part 3: Other Information</a>
+            <a href="part4.html">Part 4: Declaration & Signature</a>
+        </nav>
+        <header>Part 3 : Other Information</header>
+    </div>
+    <section>
+        
+
+        <div id="form_part_1">
+            <form action="action_page.php">
+
+                <div>
+                    <label for="overstay">3.1 Have you ever overstayed your visa or residence permit in China?:</label>
+                    <input type="radio" id="overstayed" name="overstayed?" value="overstayed" />
+                    <label for="overstayed">Yes</label>
+                    <input type="radio" id="notoverstay" name="overstayed?" value="notoverstay" />
+                    <label for="notoverstay">No</label>
+                </div>
+
+                <div>
+                    <label for="refused">3.2 Have you ever been refused a visa for China, or been refused entry into
+                        China?:</label>
+                    <input type="radio" id="refused" name="refused?" value="refused" />
+                    <label for="refused">Yes</label>
+                    <input type="radio" id="notrefused" name="refused?" value="notrefused" />
+                    <label for="notrefused">No</label>
+                </div>
+
+
+                <div>
+                    <label for="crime">3.3 Do you have any criminal record in China or any other country?:</label>
+                    <input type="radio" id="crime" name="crime?" value="crime" />
+                    <label for="crime">Yes</label>
+                    <input type="radio" id="noncrime" name="crime?" value="noncrime" />
+                    <label for="noncrime">No</label>
+                </div>
+
+
+                <div>
+                    <label for="healthHazard">3.4 Are you experiencing any of the following conditions conditions?:</label>
+                    <ul><li>Serious mental disorder.</li><li>Infectious pulmonary tuberculosis.</li><li>Other infectious disease of
+                        public health hazards.</li></ul>
+                    <input type="radio" id="healthHazard" name="hazard?" value="healthHazard" />
+                    <label for="crime">Yes</label>
+                    <input type="radio" id="nonhealthHazard" name="hazard?" value="nonhealthHazard" />
+                    <label for="nonhealthHazard">No</label>
+                </div>
+
+
+                <div>
+                    <label for="hazardCountry">3.5 Did you visit countries or territories affected by infectious
+                        diseases in the last 30 days?:</label>
+                    <input type="radio" id="hazardCountry" name="hazardCountry?" value="hazardCountry" />
+                    <label for="hazardCountry">Yes</label>
+                    <input type="radio" id="nonhazardCountry" name="hazardCountry?" value="nonhazardCountry" />
+                    <label for="nonhazardCountry">No</label>
+                </div>
+
+                <div>
+                    <label for="infectiousVisa">3.6 If you select Yes to any questions from 3.1 to 3.5, please
+                        give detail here:</label><br>
+                    <textarea class="moreText" name="infectiousVisa" cols="100" rows="2"></textarea>
+                </div>
+                <div>
+                    <label for="moreDetailsAboutVisa">3.7 If you have more information about your visa application other than the above to declare, 
+                        please give details below or type on a separate paper:</label>
+                    <textarea class="moreText" name="moreDetailsAboutVisa" cols="100" rows="2"></textarea>
+                </div>
+
+
+                <div>
+                    <label for="insaneTable">3.8 If someone else travels and shares the same passport with the applicant,
+                         please affix their photos and give their information below:</label><br><br>
+                    <table class="infant" name="insaneTable">
+                        <tr>
+                            <th>Information</th>
+                            <th>Person 1 <br><br><label for="photoUpload">Select a photo to upload.</label>
+                                <input type="file" name="photoUpload" value="photoUpload" id="photoUpload"></th>
+                            <th>Person 2 <br><br><label for="photoUpload">Select a photo to upload.</label>
+                                <input type="file" name="photoUpload" value="photoUpload" id="photoUpload"></th>
+                            <th>Person 3 <br><br><label for="photoUpload">Select a photo to upload.</label>
+                                <input type="file" name="photoUpload" value="photoUpload" id="photoUpload"></th>
+                        </tr>
+                        <tr><th scope="row">Full Name</th>
+                            <td><input type="text" id="infant1" name="infant1" placeholder="Type full name here.." /></td>
+                            <td><input type="text" id="infant1" name="infant1" placeholder="Type full name here.." /></td>
+                            <td><input type="text" id="infant1" name="infant1" placeholder="Type full name here.." /></td>
+                        </tr>
+                        <tr><th scope="row">Gender</th>
+                            <td><input type="text" id="infant1sex" name="infant1sex" placeholder="Type gender here.." /></td>
+                            <td><input type="text" id="infant2sex" name="infant2sex" placeholder="Type gender here.." /></td>
+                            <td><input type="text" id="infant3sex" name="infant3sex" placeholder="Type gender here.." /></td>
+                        </tr>
+                        <tr><th scope="row">Date Of Birth</th>
+                            <td><input type="date" id="infant1dob" name="infant1dob"/></td>
+                            <td><input type="date" id="infant2dob" name="infant2dob"/></td>
+                            <td><input type="date" id="infant3dob" name="infant3dob"/></td>
+                        </tr>
+                    </table>
+                </div>
+
+    </section>
+    </form>
+    </div>
+    <footer>
+        <div id="buttons">
+            <a href="part2.html" class="next">&laquo; Previous</a>
+            <a href="part4.html" class="next">Next &raquo;</a>
+        </div>
+    </footer>
+</body>
+
+</html>

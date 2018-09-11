@@ -1,0 +1,166 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chinese Visa Application Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <div>
+        <nav id="topnavbar">
+            <a href="index.html">Go Back to Start Page</a>
+            <a href="part1.html">Part 1: Personal Information</a>
+            <a href="part2.html">Part 2: Travel Information</a>
+            <a href="part3.html">Part 3: Other Information</a>
+            <a href="part4.html">Part 4: Declaration & Signature</a>
+        </nav>
+        <header>Part 2 : Travel Information</header>
+    </div>
+    <section>
+        
+
+        <div id="form_part_1">
+            <form action="action_page.php">
+
+
+                <div id="row1_label">2.1 Major Purpose of Your Visit:</div>
+                <div>
+                    <select>
+                        <option value="official">Official Visit</option>
+                        <option value="tourist">Tourism</option>
+                        <option value="non-business">Non-Business Visit</option>
+                        <option value="trade">Non-Business Visit</option>
+                        <option value="talent">As Introduced Talent</option>
+                        <option value="crewMember">As Crew Member</option>
+                        <option value="transit">Transit</option>
+                        <option value="diplomat">As Resident Diplomat, Consul or Staff of International Organization</option>
+                        <option value="resident">As Permanent Resident</option>
+                        <option value="work">Work</option>
+                        <option value="foster">As Child in Foster Care</option>
+                        <option value="other">Other *Please Specify</option>
+                        <option value="shortChinese">Short term visit to Chinese citizen or foreigner with Chinese
+                            permanent residence
+                            status.</option>
+                        <option value="shortForeign">Short term visit to Foreigner residing in China due to work, study
+                            or other reasons.</option>
+                        <option value="shortStudy">Short-term study for less than 180 days.</option>
+                        <option value="longFamilyC">Family reunion for over 180 days with Chinese citizen or foreigner
+                            with Chinese permanent residence status.</option>
+                        <option value="longFamilyF">As accompanying family member of foreigner residing in China due to
+                            work, study or other reasons.</option>
+                        <option value="longStudy">Long-term study for over 180 days.</option>
+                        <option value="tempJour">As journalist for temporary news coverage.</option>
+                        <option value="resJour">As resident journalist.</option>
+                    </select>
+                    <label for="otherVis">If Other Please Specify:</label>
+                    <input type="text" id="otherVisSpec" name="otherVisSpec" placeholder="Please specify visit here..">
+                </div>
+
+
+
+                <div><label for="numberOfEntries">2.2 Intended Number Of Entries:</label></div>
+                <div>
+                    <select name="numberOfEntries" id="">
+                    <option value="oneEnt">One entry valid for 3 months from the date of issue.</option>
+                        <option value="twoEnt">Two entries valid for 3 to 6 months from the date of issue.</option>
+                        <option value="multiEnt">Multiple entries valid for 6 months from the date of issue.</option>
+                        <option value="multiEnt1">Multiple entries valid for 1 year from the date of issue.</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="twopointthree" for="express">2.3 Are you applying for express service?(*):<span class="tooltiptext">Note: Express service needs approval of consular officials and extra fees may apply.</span></label>
+                    <input type="radio" id="urgent" name="expressSelect" value="urgent" />
+                    <label for="urgent">Urgent</label>
+                    <input type="radio" id="express" name="expressSelect" value="express" />
+                    <label for="express">Express</label>
+                    <input type="radio" id="regular" name="expressSelect" value="regular" />
+                    <label for="regular">Regular</label>
+                </div>
+
+
+
+                <div>
+                    <label for="expectedFirst">2.4 Expected date of your first entry into China on this trip (mm-dd-yyyy):</label>
+                    <input type="date" id="expectedFirst" name="expectedFirst">
+                </div>
+                <div>
+                    <label for="longestIntended">2.5 Longest intended stay in China among all entries:</label>
+                    <input type="text" id="longestIntended" name="longestIntended" placeholder="Your longest intended stay in days.."><span> days.</span>
+                        
+                </div>
+
+
+                <div>
+                    <label for="itinerary">2.6 Itinerary in China (in time sequence):</label>
+                    <table>
+                        <tr>
+                            <th>Date</th>
+                            <th>Detalied Address</th>
+                        </tr>
+                        <tr>
+                            <td><input type="date" id="itineraryDate1" name="itineraryDate1"/></td>
+                            <td><input type="text" id="itineraryAdd1" name="itineraryAdd1" placeholder="Type address here.." /></td>
+                        </tr>
+                        <tr>
+                                <td><input type="date" id="itineraryDate2" name="itineraryDate2"/></td>
+                                <td><input type="text" id="itineraryAdd2" name="itineraryAdd2" placeholder="Type address here.." /></td>
+                        </tr>
+                        <tr>
+                                <td><input type="date" id="itineraryDate3" name="itineraryDate3"/></td>
+                                <td><input type="text" id="itineraryAdd3" name="itineraryAdd3" placeholder="Type address here.." /></td>
+                        </tr>
+                        <tr>
+                                <td><input type="date" id="itineraryDate4" name="itineraryDate4"/></td>
+                                <td><input type="text" id="itineraryAdd4" name="itineraryAdd4" placeholder="Type address here.." /></td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <label for="whoWillPay">2.7 Who will pay for your travel and expenses during your stay in China?:</label>
+                    <input type="text" id="whoWillPay" name="whoWillPay" placeholder="Who will pay for your expenses..">
+                </div>
+
+                <div>2.8 Information of inviter in China:</div>
+                <div>
+                    <label for="inviterName">Name:</label>
+                    <input type="text" id="inviterName" name="inviterName" placeholder="Name of your inviter..">
+                    <label for="inviterAddress">Address:</label>
+                    <input type="text" id="inviterAddress" name="inviterAddress" placeholder="Address of your inviter..">
+                    <label for="inviterPhone">Phone Number:</label>
+                    <input type="text" id="inviterPhone" name="inviterPhone" placeholder="Phone number of your inviter..">
+                    <label for="inviterRel">Relationship:</label>
+                    <input type="text" id="inviterRel" name="inviterRel" placeholder="Your relationship with your inviter..">
+
+                </div>
+
+                <div>
+                    <label for="lastVisaInfo">2.9 Have you ever been granted a Chinese visa? If applicable, please specify the date and place of the last time you were granted the visa:</label>
+                    <input type="date" id="lastVisaDate" name="lastVisaDate"/>
+                    <input type="text" id="lastVisaInfo" name="lastVisaInfo" placeholder="Your last visa information..">
+                </div>
+
+
+                <div>
+                        <label for="lastVisitedCountries">2.9 Other countries or territories you visited in the last 12 months:</label>
+                        <input type="text" id="lastVisitedCountries" name="lastVisitedCountries" placeholder="Your last visited countries..">
+                </div>
+
+                
+    </section>
+    </form>
+    </div>
+    <footer>
+            <div id="buttons">
+                    <a href="part1.html" class="next">&laquo; Previous</a>
+                    <a href="part3.html" class="next">Next &raquo;</a>
+                </div>
+    </footer>
+</body>
+
+</html>

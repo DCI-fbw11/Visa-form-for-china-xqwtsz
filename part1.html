@@ -1,0 +1,276 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chinese Visa Application Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <div>
+        <nav id="topnavbar">
+            <!-- <a href="">Back to Start</a> -->
+            <!-- <a href="">Previous Page</a> -->
+            <a href="index.html">Go Back to Start Page</a>
+            <a href="part1.html">Part 1: Personal Information</a>
+            <a href="part2.html">Part 2: Travel Information</a>
+            <a href="part3.html">Part 3: Other Information</a>
+            <a href="part4.html">Part 4: Declaration & Signature</a>
+        </nav>
+        <header>Part 1 : Personal Information</header>
+    </div>
+    <section>
+        
+
+        <div id="form_part_1">
+            <form action="action_page.php">
+
+
+                <div id="row1_label">1.1 Name as in Passport:</div>
+                <div id="row1_inside">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Your last name..">
+
+                    <label for="middleName">Middle Name:</label>
+                    <input type="text" id="middleName" name="middleName" placeholder="Your middle name..">
+
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Your name..">
+
+                    <label for="photoUpload">Select a photo to upload.</label>
+                    <input type="file" name="photoUpload" value="photoUpload" id="photoUpload">
+                </div>
+
+
+
+
+                <div>
+                    <label for="chineseName">1.2 Name in Chinese:</label>
+                    <input type="text" id="chineseName" name="chineseName" placeholder="Your Chinese name..">
+                </div>
+                <div>
+                    <label for="otherNames">1.3 Other Name(s):</label>
+                    <input type="text" id="otherNames" name="otherNames" placeholder="Your other name(s)..">
+                </div>
+
+
+
+                <div>
+                    <label for="gender">1.4 Gender:</label>
+                    <input type="radio" id="femaleGender" name="genderSelect" value="femaleGender" />
+                    <label for="femaleGender">Female</label>
+                    <input type="radio" id="maleGender" name="genderSelect" value="femaleGender" />
+                    <label for="maleGender">Male</label>
+                </div>
+                <div>
+                    <label for="birthday">1.5 Date Of Birth (mm-dd-yyyy):</label>
+                    <input type="date" id="birthday" name="birthday">
+                </div>
+
+
+                <div>
+                    <label for="currentNationality">1.6 Current Nationality(ies):</label>
+                    <input type="text" id="currentNationality" name="currentNationality" placeholder="Your current Nationality(ies)..">
+                </div>
+                <div>
+                    <label for="formerNationality">1.7 Former Nationality(ies):</label>
+                    <input type="text" id="formerNationality" name="formerNationality" placeholder="Your former Nationality(ies)..">
+                </div>
+
+                <div>
+                    <label for="placeOfBirth">1.8 Place Of Birth (City - Province/State - Country):</label>
+                    <input type="text" id="placeOfBirth" name="placeOfBirth" placeholder="Your place of birth.. (City - Province/State - Country)">
+                </div>
+
+                <div>
+                    <label for="idNumber">1.9 Local ID / Citizenship Number:</label>
+                    <input type="text" id="idNumber" name="idNumber" placeholder="Your local id / citizenship number..">
+                </div>
+
+
+                <div>
+                    <label for="passportType">1.10 Passport / Travel Document Type:</label>
+                    <select>
+                        <option value="diplomatic">Diplomatic</option>
+                        <option value="ordinary">Ordinary</option>
+                        <option value="serviceOrOfficial">Service or Official</option>
+                        <option value="other">Other (Please Specify)</option>
+                    </select>
+                    <input type="text" id="otherPassport" name="otherPassport" placeholder="If you select other, please specify..">
+                </div>
+
+
+
+                <div>
+                    <label for="passportNumber">1.11 Passport Number:</label>
+                    <input type="text" id="passportNumber" name="passportNumber" placeholder="Your Passport number..">
+                    <label for="placeOfIssue">1.13 Passport Place of Issue:</label>
+                    <input type="text" id="placeOfIssue" name="placeOfIssue" placeholder="Your Passport place of issue..">
+                </div>
+                <div>
+                    <label for="passportDate">1.12 Passport / Travel Document Date of Issue (mm-dd-yyyy):</label>
+                    <input type="date" id="passportDate" name="passportDate">
+                    <label for="expiryDate">1.14 Passport / Travel Document Date of Expiry (mm-dd-yyyy):</label>
+                    <input type="date" id="expiryDate" name="expiryDate">
+                </div>
+
+
+                <div>
+                    <label for="occupation">1.15 Current Occupation(s):</label>
+                    <select>
+                        <option value="businessPerson">Business Person</option>
+                        <option value="employee">Company Employee</option>
+                        <option value="entertainer">Entertainer</option>
+                        <option value="industrial">Industrial / Agricultural Worker</option>
+                        <option value="student">Student</option>
+                        <option value="crewMember">Crew Member</option>
+                        <option value="self">Self Employed</option>
+                        <option value="unemp">Unemployed</option>
+                        <option value="retired">Retired</option>
+                        <option value="ngo">NGO Staff</option>
+                        <option value="religious">Religious Personnel</option>
+                        <option value="media">Staff of Media</option>
+                        <option value="formerParliament">Former/Incumbent Member of Parliament *Please Specify</option>
+                        <option value="formerGovernment">Former/Incumbent Government Official *Please Specify</option>
+                        <option value="military">Military Personnel *Please Specify</option>
+                        <option value="other">Other *Please Specify</option>
+
+                    </select>
+                    <label for="specification">* Please specify here:</label>
+                    <input type="text" id="specification" name="specification" placeholder="Your occupation/position..">
+                </div>
+
+                <div>
+                    <label for="education">1.16 Education:</label>
+                    <input type="radio" id="postgrad" name="eduSelect" value="postgrad" />
+                    <label for="postgrad">Postgraduate</label>
+                    <input type="radio" id="college" name="eduSelect" value="college" />
+                    <label for="college">College</label>
+                    <input type="radio" id="high" name="eduSelect" value="high" />
+                    <label for="high">High School</label>
+                    <input type="radio" id="otherEdu" name="eduSelect" value="otherEdu" />
+                    <label for="otherEdu">Other (Please Specify):</label>
+                    <input type="text" id="otherEduSpec" name="otherEduSpec" placeholder="Please specify education here..">
+                </div>
+
+
+                <div>1.17 Employer/School</div>
+                <div>
+                    <label for="empAdd">Address:</label>
+                    <input type="text" id="empAdd" name="empAdd" placeholder="Your home address..">
+                    <label for="empZip">Zip Code:</label>
+                    <input type="number" id="empZip" name="empZip" min="0" max="10000000" placeholder="Your Employer/School address zip code..">
+                    <label for="empNum">Phone Number:</label>
+                    <input type="text" id="empNum" name="empNum" placeholder="Your Employer/School phone number..">
+                    <label for="empName">Name:</label>
+                    <input type="text" id="empName" name="empName" placeholder="Your Employer/School name..">
+
+                </div>
+
+
+
+                <div>Home</div>
+                <div>
+                    <label for="homeAdd">1.18 Address:</label>
+                    <input type="text" id="homeAdd" name="homeAdd" placeholder="Your home address..">
+                    <label for="homeZip">1.19 Zip Code:</label>
+                    <input type="number" id="homeZip" name="homeZip" min="0" max="10000000" placeholder="Your home address zip code..">
+                    <label for="homeNum">1.20 Phone Number:</label>
+                    <input type="text" id="homeNum" name="homeNum" placeholder="Your Employer/School phone number..">
+                    <label for="email">1.21 E-mail Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Your e-mail address..">
+
+                </div>
+
+
+                <div>
+                    <label for="marital">1.22 Marital Status:</label>
+                    <input type="radio" id="married" name="marSelect" value="married" />
+                    <label for="married">Married</label>
+                    <input type="radio" id="single" name="marSelect" value="single" />
+                    <label for="single">Single</label>
+                    <label for="otherMar">Other (Please Specify):</label>
+                    <input type="text" id="otherMarSpec" name="otherMarSpec" placeholder="Please specify marital status here..">
+                </div>
+
+
+                <div>1.23 Mayor Family Members (spouse, children, parents, etc.):</div>
+                <div>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Nationality</th>
+                            <th>Occupation</th>
+                            <th>Relationship</th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="relName1" name="relName1" placeholder="Type relative name here.." /></td>
+                            <td><input type="text" id="relNat1" name="relNat1" placeholder="Type relative nationality here.." /></td>
+                            <td><input type="text" id="relOcc1" name="relOcc1" placeholder="Type relative occupation here.." /></td>
+                            <td><input type="text" id="relRe1" name="relRe1" placeholder="Type relative relationship status here.." /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="relName2" name="relName2" /></td>
+                            <td><input type="text" id="relNat2" name="relNat2" /></td>
+                            <td><input type="text" id="relOcc2" name="relOcc2" /></td>
+                            <td><input type="text" id="relRe2" name="relRe2" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="relName3" name="relName3" /></td>
+                            <td><input type="text" id="relNat3" name="relNat3" /></td>
+                            <td><input type="text" id="relOcc3" name="relOcc3" /></td>
+                            <td><input type="text" id="relRe3" name="relRe3" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="relName4" name="relName4" /></td>
+                            <td><input type="text" id="relNat4" name="relNat4" /></td>
+                            <td><input type="text" id="relOcc4" name="relOcc4" /></td>
+                            <td><input type="text" id="relRe4" name="relRe4" /></td>
+                        </tr>
+                    </table>
+                </div>
+
+
+
+                <div>
+                    1.24 Emergency Contact:
+                </div>
+                <div>
+                    <div>
+                        <label for="emConName">Name:</label>
+                        <input type="text" id="emConName" name="emConName" placeholder="Emergency contact name..">
+                        <label for="emConNum">Phone Number:</label>
+                        <input type="text" id="emConNum" name="emConNum" placeholder="Emergency contact phone number..">
+                    </div>
+                    <div>
+                        <label for="emConRel">Relationship with the Applicant:</label>
+                        <input type="text" id="emConRel" name="emConRel" placeholder="Emergency contact & applicant relationship..">
+                    </div>
+                </div>
+
+
+                <div>
+                    <label for="visaAppCountry">1.25 Country or territory where the applicant is located when applying
+                        for
+                        this visa:</label>
+                    <input type="text" id="visaAppCountry" name="visaAppCountry" placeholder="Location..">
+                </div>
+                
+                
+    </section>
+    </form>
+    </div>
+    <footer>
+            <div id="buttons">
+                    <!-- <a href="#" class="previous">&laquo; Previous</a> -->
+                    <a href="part2.html" class="next">Next &raquo;</a>
+                    </div>
+    </footer>
+</body>
+
+</html>

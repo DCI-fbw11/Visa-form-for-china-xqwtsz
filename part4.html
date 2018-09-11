@@ -1,0 +1,85 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chinese Visa Application Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <div>
+        <nav id="topnavbar">
+            <a href="index.html">Go Back to Start Page</a>
+            <a href="part1.html">Part 1: Personal Information</a>
+            <a href="part2.html">Part 2: Travel Information</a>
+            <a href="part3.html">Part 3: Other Information</a>
+            <a href="part4.html">Part 4: Declaration & Signature</a>
+        </nav>
+        <header>Part 4: Declaration & Signature</header>
+    </div>
+    <section>
+        
+
+        <div id="form_part_1">
+            <form action="action_page.php">
+
+                <div class="part4_table">
+                    <p>4.1 I hereby declare that I have read and understood all 
+                        the questions in this application and shall be bear all the
+                         legal consequences for the authenticity of the information and materials I provided.</p>
+
+                    <p>4.2 I understand that whether to issue a visa, type of visa, number of entries,
+                         validity and duration of each stay will be determined by consular official, 
+                         and that any false, misleading or incomplete statement may
+                          result in the refusal of a visa for or denial of entry into China.</p>
+
+                    <p>4.3 I understand that, according to Chinese law, applicant may be refused entry into China even if a visa is granted.</p><br><br>      
+                    
+                    <label for="photoUpload">Applicant Signature: Select a photo to upload for digital signature:</label>
+                    <input type="file" name="photoUpload" value="photoUpload" id="photoUpload"><br>
+                    <label for="signatureDAte">Applicant Signature Date: Select the date of your application:</label>
+                    <input type="date" name="signatureDAte">
+                </div>
+
+                <div class="repTable">
+                    <h4>Part 5: If the application form is completed by another person on the applicant's behalf, 
+                        please fill out the information of the one who completes the form:</h4>
+                        
+                        <label for="relativeAppName">5.1 Name:</label>
+                        <input type="text" id="relativeAppName" name="relativeAppName" placeholder="Representative name.."><br>
+    
+                        <label for="relativeAppRel">5.2 Relationship with Applicant:</label>
+                        <input type="text" id="relativeAppRel" name="relativeAppRel" placeholder="Applicant - representative relationship.."><br>
+    
+                        <label for="relativeAppAdd">5.3 Address:</label>
+                        <input type="text" id="relativeAppAdd" name="relativeAppAdd" placeholder="Representative address.."><br>
+
+                        <label for="relativeAppPho">5.4 Phone Number:</label>
+                        <input type="text" id="relativeAppPho" name="relativeAppPho" placeholder="Representative phone.."><br>
+                        
+                        <p>5.5 I declare that I have assisted in the completion of this form at the request of the applicant and
+                             that the applicant understands and agrees that the information provided is true and correct.</p>
+
+                        <label for="photoUpload">Representative Signature: Select a photo to upload for digital signature:</label>
+                        <input type="file" name="photoUpload" value="photoUpload" id="photoUpload"><br>
+                        <label for="repsignatureDAte">Representative Signature Date: Select the date of your application:</label>
+                        <input type="date" name="repsignatureDAte">
+                    </div>
+
+    </section>
+    </form>
+    </div>
+    <footer>
+        <div id="buttons">
+            <a href="part3.html" class="next">&laquo; Previous</a>
+            <a href="success.html" class="next">Finish & Submit</a>
+        </div>
+    </footer>
+</body>
+
+</html>
